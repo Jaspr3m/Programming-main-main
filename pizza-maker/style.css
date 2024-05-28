@@ -1,0 +1,98 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    padding: 1%;
+    margin: 2%;
+    border: solid 2px black;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.options-tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.9fr 0.2fr 1.5fr 0.3fr 2.9fr;
+    gap: 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "crust-title"
+      "crust-options"
+      "sauce-title"
+      "sauce-options"
+      "topping-title"
+      "topping-options";
+    border-right: solid 1px black;
+}
+
+/* elements regarding titles and clickable items */
+
+.crust-title {
+    grid-area: crust-title; 
+}
+
+.crust-options {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 100px; 
+    grid-template-areas: 
+      ". . . ."; 
+    grid-area: crust-options; 
+    padding-right: 5%; 
+}
+
+.sauce-title {
+    grid-area: sauce-title;
+}
+
+.sauce-options {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 100px; 
+    grid-template-areas: 
+      ". . . ."; 
+    grid-area: sauce-options; 
+    padding-right: 5%; 
+}
+
+.topping-title {
+    grid-area: topping-title;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.topping-options {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr;
+    gap: 10px 100px; 
+    grid-template-areas: 
+      ". . . ."
+    grid-area: topping-options;
+    padding-right: 5%; 
+}
+
+/* --------------------------------------------- */
+
+/* tab regarding overview of the pizza */
+.overview-tab {
+    display: flex;
+    border-left: solid 1px black;
+    /* grid-area: 1 / 2 / 2 / 3; */
+    padding-top: 1%;
+    padding-left: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------------------- */
+
+
+
+  
